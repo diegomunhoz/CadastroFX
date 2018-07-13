@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="221.9609375" prefWidth="444.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.CadastroController">
+  <children>
+    <Label layoutX="37.0" layoutY="22.0" text="Nome:" />
+    <Label layoutX="37.0" layoutY="54.0" text="Idade:" />
+    <Label layoutX="36.0" layoutY="85.0" text="Cidade:" />
+    <Label layoutX="37.0" layoutY="118.0" text="Login:" />
+    <Label layoutX="37.0" layoutY="152.0" text="Senha:" />
+    <TextField fx:id="txtNome" layoutX="102.0" layoutY="19.0" prefWidth="298.0" />
+    <TextField fx:id="txtIdade" layoutX="102.0" layoutY="51.0" prefWidth="122.0" />
+    <TextField fx:id="txtCidade" layoutX="102.0" layoutY="82.0" prefWidth="298.0" />
+    <TextField fx:id="txtLogin" layoutX="102.0" layoutY="115.0" prefWidth="200.0" />
+    <PasswordField fx:id="txtSenha" layoutX="101.0" layoutY="149.0" prefWidth="200.0" />
+    <Button fx:id="jbtSalvar" layoutX="29.0" layoutY="184.0" mnemonicParsing="false" onAction="#salvar" prefWidth="111.0" text="SALVAR" />
+    <Button fx:id="jbtCancelar" layoutX="167.0" layoutY="184.0" mnemonicParsing="false" onAction="#cancelar" prefWidth="111.0" text="CANCELAR" />
+    <Button id="jbtSair" fx:id="jbtFechar" layoutX="306.0" layoutY="185.0" mnemonicParsing="false" onAction="#fechar" prefWidth="111.0" text="FECHAR" />
+  </children>
+</AnchorPane>

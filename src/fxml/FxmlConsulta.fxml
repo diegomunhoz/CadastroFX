@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.ConsultaController">
+  <children>
+    <Label layoutX="174.0" layoutY="22.0" text="Consulta de Clientes">
+      <font>
+        <Font size="28.0" />
+      </font>
+    </Label>
+    <Label layoutX="40.0" layoutY="81.0" text="Nome:" />
+    <TextField fx:id="edtPesquisa" layoutX="92.0" layoutY="78.0" onKeyReleased="#edtPesquisaAction" prefWidth="457.0" />
+    <TableView fx:id="table" layoutX="40.0" layoutY="132.0" prefHeight="200.0" prefWidth="517.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="64.0" text="Código" fx:id="colCodigo" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="230.0" text="Nome" fx:id="colNome" />
+        <TableColumn prefWidth="75.0" text="Idade" fx:id="colIdade" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="148.0" text="Cidade" fx:id="colCidade" />
+      </columns>
+    </TableView>
+    <Button fx:id="jbtFechar" layoutX="40.0" layoutY="356.0" mnemonicParsing="false" onAction="#fechar" prefWidth="517.0" text="F E C H A R" />
+  </children>
+</AnchorPane>
